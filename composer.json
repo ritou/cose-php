@@ -1,0 +1,27 @@
+{
+    "name": "kura-lab/cose-php",
+    "description": "Json Web Token (JWT) Library",
+    "keywords": ["JWT", "JSON Web Token", "COSE"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/kura-lab/cose-php",
+    "authors": [
+      {
+        "name": "kura-lab",
+        "email": "none"
+      }
+    ],
+    "require": {
+        "2tvenom/cborencode": "dev-master"
+    }
+    "require-dev": {
+        "2tvenom/cborencode": "dev-master",
+        "squizlabs/php_codesniffer": "2.*",
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+      "psr-0": {
+        "kuralab\\cose": "src/"
+      }
+    }
+}
