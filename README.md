@@ -26,7 +26,8 @@ Create composer.json.
         }
     ],
     "require": {
-        "kura-lab/cose-php": "dev-master"
+        "kura-lab/cose-php": "dev-master",
+        "2tvenom/cborencode": "dev-master"
     }
 }
 ```
