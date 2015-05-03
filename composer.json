@@ -11,8 +11,10 @@
         "email": "none"
       }
     ],
+    "require": {
+        "2tvenom/cborencode": "dev-master"
+    },
     "require-dev": {
-        "2tvenom/cborencode": "dev-master",
         "squizlabs/php_codesniffer": "2.*",
         "phpunit/phpunit": "3.7.*"
     },
