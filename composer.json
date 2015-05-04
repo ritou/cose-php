@@ -10,8 +10,9 @@
         "name": "kura-lab"
       }
     ],
+    "minimum-stability": "dev",
     "require": {
-        "2tvenom/cborencode": "dev-master@dev"
+        "2tvenom/cborencode": "dev-master"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "2.*",
