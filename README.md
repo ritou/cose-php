@@ -50,3 +50,10 @@ Execute unit test with PHPUnit.
 ```
 $ vendor/bin/phpunit
 ```
+
+Fix source code with PHP Coding Standards Fixer.
+
+```
+$ vendor/bin/php-cs-fixer fix --config-file .php_cs --verbose --diff --dry-run
+$ vendor/bin/php-cs-fixer fix --config-file .php_cs --verbose --diff
+```
