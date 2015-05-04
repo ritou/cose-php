@@ -26,8 +26,7 @@ Create composer.json.
         }
     ],
     "require": {
-        "kura-lab/cose-php": "dev-master",
-        "2tvenom/cborencode": "dev-master"
+        "kura-lab/cose-php": "dev-master"
     }
 }
 ```
@@ -36,4 +35,18 @@ Install cose library.
 
 ```
 $ php composer.phar install
+```
+
+### Development
+
+Check coding style with CodeSniffer.
+
+```
+$ vendor/bin/phpcs --standard=PSR2 src/
+```
+
+Execute unit test with PHPUnit.
+
+```
+$ vendor/bin/phpunit
 ```
