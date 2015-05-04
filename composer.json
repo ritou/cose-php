@@ -7,8 +7,7 @@
     "homepage": "https://github.com/kura-lab/cose-php",
     "authors": [
       {
-        "name": "kura-lab",
-        "email": "none"
+        "name": "kura-lab"
       }
     ],
     "require": {
@@ -16,7 +15,7 @@
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "2.*",
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit": "4.6.*"
     },
     "autoload": {
       "psr-0": {
