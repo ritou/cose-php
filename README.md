@@ -5,6 +5,10 @@ Constrained Object Signing and Encryption for PHP
 
 * https://datatracker.ietf.org/doc/draft-bormann-jose-cose/
 
+### Requirements
+
+* PHP 5.4.0 or higher.
+
 ### Installation
 
 At first, install composer.
