@@ -15,41 +15,34 @@ $nonce      = 'abc123';
 // encode jwt
 $jwtObj = new JWT();
 $encodedJwt = $jwtObj->encode(
-  $algorithm,
-  $audience,
-  $clientId,
-  $expiration,
-  $nonce,
-  $secret
+    $algorithm,
+    $audience,
+    $clientId,
+    $expiration,
+    $nonce,
+    $secret
 );
 echo "=== Encoded Json Web Token ===\n";
 $byteArr = unpack("C*", $encodedJwt);
-echo "Byte dec map = " . implode(" ",$byteArr) . PHP_EOL;
+echo "Byte dec map = " . implode(" ", $byteArr) . PHP_EOL;
 echo "\n";
-echo "Byte hex map = " . implode(" ",
-    array_map(
-        function($byte) {
-          return "0x" . strtoupper(dechex($byte));
-        },
-        $byteArr
-    )
-) . PHP_EOL;
+echo "Byte hex map = " . implode(" ", array_map(function ($byte) {
+    return "0x" . strtoupper(dechex($byte));
+}, $byteArr)) . PHP_EOL;
 echo "\n\n";
 
 try {
-
-  // verify and decode jwt
-  $jwtObj = new JWT( $encodedJwt );
-  $jwtObj->verify(
-    $audience,
-    $clientId,
-    $nonce,
-    $secret
-  );
-  $decodedJwt = $jwtObj->decode();
-  echo "=== Decoded Json Web Token ===\n";
-  print_r( $decodedJwt );
-
-} catch ( Exception $e ) {
-  var_dump( $e );
+    // verify and decode jwt
+    $jwtObj = new JWT($encodedJwt);
+    $jwtObj->verify(
+        $audience,
+        $clientId,
+        $nonce,
+        $secret
+    );
+    $decodedJwt = $jwtObj->decode();
+    echo "=== Decoded Json Web Token ===\n";
+    print_r($decodedJwt);
+} catch (Exception $e) {
+    var_dump($e);
 }
