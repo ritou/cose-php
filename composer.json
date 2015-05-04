@@ -11,7 +11,7 @@
       }
     ],
     "require": {
-        "2tvenom/cborencode": "dev-master"
+        "2tvenom/cborencode": "@dev-master"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "2.*",
