@@ -10,7 +10,7 @@
         "name": "kura-lab"
       }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "dev-master",
     "prefer-stable": true,
     "require": {
         "2tvenom/cborencode": "dev-master"
