@@ -25,6 +25,7 @@ Create composer.json.
             "url": "https://github.com/kura-lab/cose-php"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "kura-lab/cose-php": "dev-master"
     }
